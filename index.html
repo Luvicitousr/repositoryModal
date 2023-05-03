@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>S.T.A.R.S.</title>
+    <link rel="stylesheet" href="css\style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>	
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the homepage</h1>
+        <nav>
+            <ul>
+                <li><a href="#about-us">About S.T.A.R.S.</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#social-projects">Social projects</a></li>
+                <li><a href="#contact">Contact us</a></li>
+                <li><button onclick="showModal()" id="cart">Cart</button></li>
+            </ul>
+        </nav>
+        
+        <!-- Modal com lista -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <ul id="list"></ul>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <section id="about-us">
+            <h2>About us</h2>
+            <p>We are a game development company passionate about zombies and always looking for technological innovations.</p>
+        </section>
+        <section id="products">
+            <h2>Games</h2>
+            <ul id = "productsList">
+                <li>Decaf Simulator | Add to Cart</li>
+                <li>Instant Game | Add to Cart</li>
+                <li>Turkish Card Game | Add to Cart</li>
+                <li>Cappuccino Board Game | Add to Cart</li>
+            </ul>
+        </section>
+        <section id="social-projects">
+            <h2>Future projects</h2>
+            <ul>
+                <li><a href="#">Project 1</a></li>
+                <li><a href="#">Project 2</a></li>
+                <li><a href="#">Project 3</a></li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact us</h2>
+            <form>
+                <label for="nome">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br><br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+    <script src="javascript/script.js"></script>
+    <footer>
+        <p>© 2023 S.T.A.R.S. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

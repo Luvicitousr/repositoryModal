@@ -1,0 +1,112 @@
+/* Estilos para o cabeçalho */
+header {
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    }
+    header h1 {
+    margin: 0;
+    }
+    
+    /* Estilos para o menu de navegação */
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+    nav li {
+    float: left;
+    }
+    nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    nav a:hover {
+    background-color: #222;
+    }
+    
+    /* Estilos para as seções */
+    section {
+    padding: 50px;
+    }
+    section h2 {
+    margin-top: 0;
+    }
+    
+    /* Estilos para o formulário de contato */
+    form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    }
+    label {
+    display: block;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    }
+    input[type="submit"] {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    input[type="submit"]:hover {
+    background-color: #222;
+    }
+    
+    /* Estilos para o rodapé */
+    footer {
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    }
+
+/* Fundo do modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(1,1,1,1.5);
+  }
+  
+  /* Conteúdo do modal */
+  .modal-content {
+    background-color: #0f0f0f;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #999;
+    width: 80%;
+  }
+  
+  /* Botão fechar */
+  .close {
+    color: #bbb;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
